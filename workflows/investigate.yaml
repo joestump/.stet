@@ -1,0 +1,12 @@
+id: investigate
+steps:
+  - id: investigate
+    instructionTemplate: |
+      A reviewer flagged code they believe is incorrect and asked you to investigate.
+
+      Their note: {{item.intent}}
+      Location: {{item.anchor}}
+
+      Reproduce the problem, find the root cause, implement the fix, and add or update a
+      test that fails before your change and passes after it. Commit your work to a new
+      branch and write a short walkthrough of what was wrong and how you fixed it.

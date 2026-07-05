@@ -1,5 +1,7 @@
 # Verb pack (ADR-0005) — mirrors StetKit's bundled default pack. Each verb binds
 # an emoji + reading to a named workflow the runner resolves at dispatch.
+# workflowID is a symbolic key — see workflows/<id>.yaml here, and README
+# "How workflowID resolves" for the tier resolution order.
 version: 1
 name: default
 verbs:

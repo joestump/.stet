@@ -1,0 +1,13 @@
+id: explain
+steps:
+  - id: explain
+    instructionTemplate: |
+      A reviewer does not understand a piece of code and asked you to explain it.
+
+      Their question: {{item.intent}}
+      Location: {{item.anchor}}
+
+      Explain what the code does and why. Prefer clarifying the code in place — add or improve
+      comments and docstrings — over changing its behavior; make no functional change unless it
+      is required to make the explanation truthful. Commit any documentation edits to a new
+      branch and write a short walkthrough summarizing the explanation.

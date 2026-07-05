@@ -1,0 +1,13 @@
+id: delete
+steps:
+  - id: delete
+    instructionTemplate: |
+      A reviewer marked code for deletion.
+
+      Their note: {{item.intent}}
+      Location: {{item.anchor}}
+
+      Confirm the code is safe to remove (unused, or explicitly unwanted per the note), then
+      delete it along with any now-orphaned imports, references, and dead tests. Do not remove
+      anything still in use. Keep the build and the test suite green. Commit to a new branch and
+      write a short walkthrough of what you removed and why it was safe.

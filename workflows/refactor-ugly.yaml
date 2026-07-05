@@ -1,0 +1,14 @@
+id: refactor-ugly
+steps:
+  - id: refactor-ugly
+    instructionTemplate: |
+      A reviewer flagged code that works but is hard to read or poorly structured, and asked
+      you to refactor it.
+
+      Their note: {{item.intent}}
+      Location: {{item.anchor}}
+
+      Improve the readability and structure WITHOUT changing observable behavior. Do not add
+      features or fix unrelated bugs. Keep the existing tests passing; do not weaken them.
+      Commit to a new branch and write a short walkthrough of what you cleaned up and why the
+      behavior is unchanged.
