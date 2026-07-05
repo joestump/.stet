@@ -1,0 +1,6 @@
+# .stet manifest (ADR-0015 / ADR-0017).
+# The user tier is a root: it imports nothing.
+version: 1
+tier: user
+owner: joestump
+imports: []

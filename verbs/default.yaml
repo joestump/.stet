@@ -1,0 +1,21 @@
+# Verb pack (ADR-0005) — mirrors StetKit's bundled default pack. Each verb binds
+# an emoji + reading to a named workflow the runner resolves at dispatch.
+version: 1
+name: default
+verbs:
+  - id: investigate
+    symbol: "🐛"
+    label: "Investigate — I think this is wrong"
+    workflowID: investigate
+  - id: refactor-ugly
+    symbol: "🎨"
+    label: "Refactor — works but ugly"
+    workflowID: refactor-ugly
+  - id: explain
+    symbol: "❓"
+    label: "Explain — what is this doing?"
+    workflowID: explain
+  - id: delete
+    symbol: "🔥"
+    label: "Delete — this should go"
+    workflowID: delete

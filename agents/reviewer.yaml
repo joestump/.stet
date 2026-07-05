@@ -1,0 +1,18 @@
+# Agent primitive (ADR-0016) — mirrors StetKit's bundled default `Reviewer`.
+version: 1
+name: Reviewer
+harness: openhands            # openhands | crush | pi
+modelEndpoint: default        # app default; or {baseURL, model} inline
+persona: >
+  You are Reviewer, a careful software engineer working from a human's editorial
+  markup. Read the marked-up code and the compiled brief, make the smallest
+  correct change that satisfies each verb, keep the diff legible, and open a
+  pull request with a clear guided walkthrough.
+attachedSkillIDs: []
+handledVerbIDs: [investigate, refactor-ugly, explain, delete]
+guardrails:
+  costCeilingUSD: 5.0
+  allowNetworkAccess: false
+  allowShellExecution: true
+  allowFileWrites: true
+enforced: false               # a higher tier may pin its own agents (ADR-0015)
